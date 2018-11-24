@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+  height: 100vh;
+}
+
+header,
+footer{
+  background-color: #2bcbba;
+  padding: 1rem;
+  height: 5vh;
+}
+
+footer p{
+  font-size: 1rem;
+}
+
+.container{
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+#map {
+  height: 81vh;
+}
+
+.title{
+  cursor: pointer;
+}
+
+.list ol{
+  list-style-type: none;
+}
+
+.query{
+  width: 100%;
+  margin: 5px;
+  font-size: 1rem;
+  outline: none;
+  padding: 5px;
+  border: 5px solid #0fb9b1;
+}
+
+.side-drawer{
+  height: 81vh;
+  background-color: #2C3335;
+  color: #ffffff;
+  position: fixed;
+  z-index: 999;
+  width: 80%;
+  max-width: 250px;
+  transform: translateX(-110%);
+  transition: transform .5s ease-in-out;
+}
+
+.side-drawer li{
+  margin: 5px 0;
+  border-bottom: 0.5px solid #ffffff;
+}
+
+.side-drawer.open{
+  transform: translateX(0);
+}
+
+.icon{
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  left: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.icon i{
+  font-size: 1.5rem;
+}
+
+.love{
+  font-size: 1rem;
+  color: red;
+}
+
+.filter{
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.search-accs{
+  position: absolute;
+  left: -999px;
+}
+
+
+/* responsive styling */
+@media screen and (max-width: 360px){
+  .icon i{
+    font-size: 1rem;
+  }
+
+  header h1{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 765px){
+  .icon i{
+    font-size: 1.2rem;
+  }
+
+  header h1{
+    font-size: 1.2rem;
+  }
+}
